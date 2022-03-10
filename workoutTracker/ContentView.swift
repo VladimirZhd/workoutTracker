@@ -15,6 +15,16 @@ struct ContentView: View {
                     Image(systemName: "house.fill")
                     Text("Home")
                 }
+            Workouts()
+                .tabItem {
+                    Image(systemName: "figure.walk")
+                    Text("Workout")
+                }
+            Account()
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Account")
+                }
         }
     }
 }

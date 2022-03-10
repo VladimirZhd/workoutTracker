@@ -1,5 +1,5 @@
 //
-//  Home.swift
+//  Account.swift
 //  workoutTracker
 //
 //  Created by Vova Zhdanov on 3/9/22.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct Home: View {
+struct Account: View {
     var body: some View {
-        Text("Home Page")
+        Text("Account")
     }
 }
 
-struct Home_Previews: PreviewProvider {
+struct Account_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        Account()
     }
 }
