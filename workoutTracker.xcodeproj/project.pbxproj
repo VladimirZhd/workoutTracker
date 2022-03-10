@@ -21,6 +21,9 @@
 		8093849627D7136B00AEE52A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8093849527D7136B00AEE52A /* ComplicationController.swift */; };
 		8093849827D7136B00AEE52A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8093849727D7136B00AEE52A /* Assets.xcassets */; };
 		8093849B27D7136B00AEE52A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8093849A27D7136B00AEE52A /* Preview Assets.xcassets */; };
+		809384C827D9B89700AEE52A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809384C727D9B89700AEE52A /* Home.swift */; };
+		809384CA27D9B8B900AEE52A /* Workouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809384C927D9B8B900AEE52A /* Workouts.swift */; };
+		809384CC27D9B8F200AEE52A /* Excercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809384CB27D9B8F200AEE52A /* Excercise.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,9 @@
 		8093849A27D7136B00AEE52A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8093849C27D7136B00AEE52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8093849D27D7136B00AEE52A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		809384C727D9B89700AEE52A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		809384C927D9B8B900AEE52A /* Workouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workouts.swift; sourceTree = "<group>"; };
+		809384CB27D9B8F200AEE52A /* Excercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Excercise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,9 @@
 			children = (
 				8093847227D7136900AEE52A /* workoutTrackerApp.swift */,
 				8093847427D7136900AEE52A /* ContentView.swift */,
+				809384C727D9B89700AEE52A /* Home.swift */,
+				809384C927D9B8B900AEE52A /* Workouts.swift */,
+				809384CB27D9B8F200AEE52A /* Excercise.swift */,
 				8093847627D7136A00AEE52A /* Assets.xcassets */,
 				8093847827D7136A00AEE52A /* Preview Content */,
 			);
@@ -306,7 +315,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8093847527D7136900AEE52A /* ContentView.swift in Sources */,
+				809384C827D9B89700AEE52A /* Home.swift in Sources */,
 				8093847327D7136900AEE52A /* workoutTrackerApp.swift in Sources */,
+				809384CC27D9B8F200AEE52A /* Excercise.swift in Sources */,
+				809384CA27D9B8B900AEE52A /* Workouts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
