@@ -9,7 +9,20 @@ import SwiftUI
 
 struct Excercise: View {
     var body: some View {
-        Text("Exercise")
+        VStack {
+            HStack {
+                Spacer()
+                Button(action: {
+                    
+                }){
+                    Text("Add Exercise")
+                        .foregroundColor(Color.black)
+                }
+                .padding()
+                
+            }
+            Spacer()
+        }
     }
 }
 
