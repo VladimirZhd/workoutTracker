@@ -26,18 +26,18 @@ struct Excercise: Identifiable {
 extension Excercise {
     struct Data {
         var title: String = ""
-        var reps: Int = 0
-        var weight: Double = 0
+        var reps: Double = 5
+        var weight: Double = 5
         var equipment: String = ""
     }
     
     var data: Data {
-        Data(title: title, reps: reps, weight: weight, equipment: equipment)
+        Data(title: title, reps: Double(reps), weight: weight, equipment: equipment)
     }
     
     mutating func update(from data: Data) {
         title = data.title
-        reps = data.reps
+        reps = Int(data.reps)
         weight = data.weight
         equipment = data.equipment
     }

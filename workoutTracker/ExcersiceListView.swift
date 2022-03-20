@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Workouts: View {
+struct ExcersiceListView: View {
     @State var excercises: [Excercise]
     
     var body: some View {
@@ -18,12 +18,11 @@ struct Workouts: View {
                 }
             }
         }
-        .navigationTitle("Workouts")
     }
 }
 
 struct Workouts_Previews: PreviewProvider {
     static var previews: some View {
-        Workouts(excercises: Excercise.sampleData)
+        ExcersiceListView(excercises: Excercise.sampleData)
     }
 }

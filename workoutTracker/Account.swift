@@ -12,7 +12,6 @@ struct Account: View {
         VStack {
             Text("Account")
         }
-        .navigationTitle("Account")
     }
 }
 

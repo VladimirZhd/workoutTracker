@@ -42,6 +42,26 @@ struct DetailView: View {
                 data = excercise.data
             }
         }
+        .sheet(isPresented: $IsPresentingEditView) {
+            NavigationView {
+                ExcersiceEditView(excercise: $data)
+                    .navigationTitle(excercise.title)
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Cancel") {
+                                IsPresentingEditView = false
+                            }
+                        }
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Done") {
+                                IsPresentingEditView = false
+                                excercise.update(from: data)
+                            }
+                        }
+                    }
+                
+            }
+        }
     }
 }
 

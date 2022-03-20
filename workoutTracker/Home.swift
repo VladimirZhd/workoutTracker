@@ -14,7 +14,6 @@ struct Home: View {
                 Text("Home Page")
             }
         }
-        .navigationTitle("Home")
     }
 }
 

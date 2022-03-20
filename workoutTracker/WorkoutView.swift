@@ -7,38 +7,27 @@
 
 import SwiftUI
 
-enum Tabs: String {
-    case home
-    case workouts
-    case account
-}
-
 struct WorkoutView: View {
     var excercises: [Excercise] = Excercise.sampleData
-    @State var selectedTab: Tabs = .home
     var body: some View {
         NavigationView {
-            TabView(selection: $selectedTab) {
+            TabView {
                 Home()
                     .tabItem {
                         Image(systemName: "house.fill")
                         Text("Home")
                     }
-                    .tag(Tabs.home)
-                Workouts(excercises: excercises)
+                ExcersiceListView(excercises: excercises)
                     .tabItem {
                         Image(systemName: "figure.walk")
-                        Text("Workout")
+                        Text("Excersices")
                     }
-                    .tag(Tabs.workouts)
                 Account()
                     .tabItem {
                         Image(systemName: "person")
                         Text("Account")
                     }
-                    .tag(Tabs.account)
             }
-            .navigationTitle(selectedTab.rawValue.capitalized)
         }
     }
 }
